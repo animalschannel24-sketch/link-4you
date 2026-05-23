@@ -1174,11 +1174,10 @@ function setLang(lang) {
 
 // ── AUTO-DETECT LANGUAGE ──────────────────────────────────────────
 (function() {
-  const saved = localStorage.getItem('l4y_lang');
   const param = new URLSearchParams(window.location.search).get('lang');
   const browser = navigator.language?.substring(0,2);
 
-  const lang = saved || param || (browser === 'pt' ? 'pt' : 'en');
+  const lang = param || (browser === 'pt' ? 'pt' : 'en');
   if (lang === 'pt') setLang('pt');
 })();
 
