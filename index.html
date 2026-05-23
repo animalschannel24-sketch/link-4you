@@ -1164,12 +1164,12 @@ function setLang(lang) {
     if (b.textContent.trim().toLowerCase() === lang) b.classList.add('active');
   });
 
-  // Update URL without reload
+   // Update URL without reload
   const url = new URL(window.location);
   url.searchParams.set('lang', lang);
   window.history.replaceState({}, '', url);
 
-  localStorage.setItem('l4y_lang', lang);
+  // localStorage removido para evitar erro em iframe sandbox
 }
 
 // ── AUTO-DETECT LANGUAGE ──────────────────────────────────────────
