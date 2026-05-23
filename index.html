@@ -293,37 +293,66 @@ section { padding: 96px 24px; }
 }
 .trust-icon { font-size: 18px; }
 
-/* ── HOW IT WORKS ── */
-.how-grid {
+/* ── HOW IT WORKS ── */.how-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2px; margin-top: 56px;
+  gap: 2px;
+  margin-top: 56px;
 }
+
 .how-card {
-  background: #1a1a22;
+  background: rgba(255,255,255,.82);
   padding: 40px 32px;
-  position: relative; overflow: hidden;
+  position: relative;
+  overflow: hidden;
   transition: background .25s;
 }
-.how-card:hover { background: #22222c; }
+
+.how-card:hover {
+  background: rgba(255,255,255,.94);
+}
+
 .how-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0;
-  height: 2px; background: var(--lime);
-  transform: scaleX(0); transform-origin: left;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--lime);
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform .35s var(--ease-out);
 }
-.how-card:hover::before { transform: scaleX(1); }
-  
+
+.how-card:hover::before {
+  transform: scaleX(1);
+}
+
 .how-num {
-  font-family: var(--font-display); font-size: 64px; font-weight: 800;
-  color: rgba(198,241,53,.22); line-height: 1;
-  margin-bottom: 16px; display: block;
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 800;
+  color: rgba(198,241,53,.38);
+  line-height: 1;
+  margin-bottom: 16px;
+  display: block;
 }
+
 .how-title {
-  font-family: var(--font-display); font-size: 20px; font-weight: 700;
-  color: var(--white); margin-bottom: 12px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #16161f;
+  margin-bottom: 12px;
 }
-.how-desc { font-size: 15px; font-weight: 300; color: #c9c9d4; line-height: 1.65; }
+
+.how-desc {
+  font-size: 15px;
+  font-weight: 300;
+  color: #4f5565;
+  line-height: 1.65;
+}
 
 /* ── CATEGORIES / OFFERS ── */
 .offers-section { background: var(--obsidian2); }
