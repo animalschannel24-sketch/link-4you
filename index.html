@@ -89,7 +89,44 @@ body::before {
   letter-spacing: -.5px;
 }
 .lang-logo span { color: var(--lime); }
-.lang-nav { display: flex; align-items: center; gap: 8px; }
+.lang-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+}
+
+.main-tab {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(245,240,232,.10);
+  color: var(--ivory2);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.main-tab:hover {
+  color: var(--white);
+  border-color: rgba(198,241,53,.22);
+  background: rgba(198,241,53,.06);
+}
+
+.main-tab.active {
+  background: rgba(198,241,53,.10);
+  border-color: rgba(198,241,53,.28);
+  color: var(--lime);
+}
 .lang-btn {
   background: none; border: 1px solid transparent;
   padding: 5px 12px; border-radius: var(--radius-sm);
