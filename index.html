@@ -87,7 +87,44 @@ body::before {
   padding: 0 24px;
   max-width: 1140px;
   margin: 0 auto;
-}.lang-logo {
+}
+  .lang-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(245,240,232,.10);
+  background: rgba(255,255,255,.02);
+  color: var(--ivory2);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all .2s;
+}
+
+.main-tab:hover {
+  color: var(--white);
+  border-color: rgba(198,241,53,.22);
+  background: rgba(198,241,53,.06);
+}
+
+.main-tab.active {
+  background: rgba(198,241,53,.10);
+  border-color: rgba(198,241,53,.28);
+  color: var(--lime);
+} 
+   .lang-logo {
   font-family: var(--font-display);
   font-size: 18px; font-weight: 800;
   color: var(--white); text-decoration: none;
