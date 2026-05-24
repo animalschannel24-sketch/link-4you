@@ -692,15 +692,24 @@ footer {
 <nav class="lang-bar" role="navigation" aria-label="Main navigation">
   <div class="lang-inner">
     <a href="#hero" class="lang-logo">link<span>-4you</span></a>
+
     <div class="lang-nav">
+      <a href="#hero" class="main-tab active en-content">Landing</a>
+      <a href="#offers" class="main-tab en-content">Products</a>
+      <a href="#newsletter" class="main-tab en-content">Books</a>
+
+      <a href="#hero" class="main-tab active pt-content hidden">Início</a>
+      <a href="#offers" class="main-tab pt-content hidden">Produtos</a>
+      <a href="#newsletter" class="main-tab pt-content hidden">Livros</a>
+
       <button class="lang-btn active" onclick="setLang('en')" aria-label="Switch to English">EN</button>
       <button class="lang-btn" onclick="setLang('pt')" aria-label="Mudar para Português">PT</button>
+
       <a href="#newsletter" class="nav-cta en-content">Get the list</a>
       <a href="#newsletter" class="nav-cta pt-content hidden">Quero a lista</a>
     </div>
   </div>
 </nav>
-
 <!-- ══════════════════════════════════════
      HERO — EN
      Goal: Capture attention, establish value prop, push to CTA
