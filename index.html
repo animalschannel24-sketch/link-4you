@@ -79,10 +79,15 @@ body::before {
   border-bottom: 1px solid rgba(198,241,53,.08);
 }
 .lang-inner {
-  display: flex; justify-content: space-between; align-items: center;
-  height: 56px; padding: 0 24px; max-width: 1140px; margin: 0 auto;
-}
-.lang-logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+  min-height: 64px;
+  padding: 0 24px;
+  max-width: 1140px;
+  margin: 0 auto;
+}.lang-logo {
   font-family: var(--font-display);
   font-size: 18px; font-weight: 800;
   color: var(--white); text-decoration: none;
